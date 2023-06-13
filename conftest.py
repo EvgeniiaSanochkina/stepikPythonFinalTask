@@ -11,7 +11,8 @@ def pytest_addoption(parser):
 @pytest.fixture(scope="function")
 def browser():
     print("\nstart browser for test..")
-    browser = webdriver.Chrome()
+    #browser = webdriver.Chrome()
+    browser = webdriver.Firefox()
 
     yield browser
     print("\nquit browser..")
